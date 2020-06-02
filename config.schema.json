@@ -1,0 +1,91 @@
+{
+   "pluginAlias": "HomeSecurityLitePlatform",
+   "pluginType": "platform",
+   "schema": {
+     "type": "object",
+     "properties": {
+         "prefix_remind_me": {
+            "type": "string",
+            "title": "Prefix for Remind me",
+            "required": false
+         },
+         "prefix_reminder": {
+            "type": "string",
+            "title": "Prefix for Reminder",
+            "required": false
+         },
+         "prefix_reminder_accessory": {
+            "type": "string",
+            "title": "Prefix for the Reminder accessory",
+            "required": false
+         },
+         "forgot_window_warning_name": {
+            "type": "string",
+            "title": "Name of the Forgot Window Warning contact sensor",
+            "required": false
+         },
+         "home_security_lite_name": {
+            "type": "string",
+            "title": "Name of the Home Security Lite accessory",
+            "required": false
+         },
+         "security_system_name": {
+            "type": "string",
+            "title": "Name of the Security system",
+            "required": false
+         },
+         "fast_cyclic_reminder_name": {
+            "type": "string",
+            "title": "Name of the Remind me fast again switch",
+            "required": false
+         },
+         "first_remind": {
+            "type": "number",
+            "title": "First reminder after x seconds",
+            "required": false
+         },
+         "fast_cyclic_remind": {
+            "type": "number",
+            "title": "Remind me again fast after x seconds",
+            "required": false
+         },
+         "slow_cyclic_remind": {
+            "type": "number",
+            "title": "Remind me again slow after x seconds",
+            "required": false
+         },
+         "windows_and_doors": {
+            "title": "Window and door contact sensors",
+            "required": false,
+            "type": "array",
+            "items": {
+               "name": {
+                  "type": "string",
+                  "title": "Name of door or window",
+                  "required": true
+               },
+               "description": {
+                  "type": "string",
+                  "title": "Optional description of door or window",
+                  "required": false
+               },
+               "first_remind": {
+                  "type": "number",
+                  "title": "First reminder after x seconds",
+                  "required": false
+               },
+               "fast_cyclic_remind": {
+                  "type": "number",
+                  "title": "Remind me again fast after x seconds",
+                  "required": false
+               },
+               "slow_cyclic_remind": {
+                  "type": "number",
+                  "title": "Remind me again slow after x seconds",
+                  "required": false
+               }
+            }
+         }
+      }
+   }
+}
